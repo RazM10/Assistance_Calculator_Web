@@ -47,10 +47,12 @@ function funcTotaling(value) {
 }
 
 function funcLastAomuntAddingUndo() {
-    var value = arrayAmount.pop();
-    totalAmount = totalAmount - value;
-    totalUnit = totalUnit - 1;
-    funcTotalOutput();
+    if(arrayAmount.length > 0){
+        var value = arrayAmount.pop();
+        totalAmount = totalAmount - value;
+        totalUnit = totalUnit - 1;
+        funcTotalOutput();
+    }
 }
 
 function funcTotalOutput() {

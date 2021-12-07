@@ -61,9 +61,18 @@ label {
 
 .amount {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .amount input {
     width: 15%;
+    /* width: 43%; */
+}
+
+@media only screen and (max-width: 400px) {
+    .amount input{
+        width: 45%;
+        margin-bottom: 5px;
+    }
 }
